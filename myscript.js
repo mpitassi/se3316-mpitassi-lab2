@@ -84,7 +84,7 @@ window.onload = function(){
         Items[i] = {
             name : ItemList[i],
             picture : ItemPics[i],
-            quantity : 5,
+            quantity : 1,
             rentalperiod : Days[i],
         };
         boughtItems[i] = 0;
