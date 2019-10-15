@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+ 
+  </style>
 <title>SE 3316 - Lab 2</title>
 <meta charset="UTF-8">
-<script type='text/javascript' src='script.js'></script>
+<script type='text/javascript' src='myscript.js'></script>
+<link rel="stylesheet" href="lab2.css">
 </head>
-<body>
+<body id = "body">
+        <div id="modal" class="modal">
+                <div id="close">
+                </div>
+                <div id="mod" class="modal-stuff">
+                </div>
+            </div>
 <h1>User Information</h1>
-Name: <input type="text" id="name">
-Email:  <input type="text" id="email">
-Year of birth: <input type="text" id="birth-year">
+<div id="div1">
+        <p id="p1"></p>
+<form id = "myForm" method = "post" action = "" onSubmit ="return saveComment;">
+Name: <input type="text" class = "static" id="name" required maxlength = "100">
+<label for="mail">E-mail: </label>
+<input type="email" id="mail" name="mail">
+Year of birth: <input type="number" id="birth-year" min = "1900" max = "2019">
+</div>
+</form>
 <h1>Library Checkout</h1>
-<h2>Items Available:</h2>
+<h1>Items Available:</h1>
 <ol id="available-items"></ol>
-<h2>Checkout List:</h2>
+<h1 id="head1">Checkout List:</h1>
 <ol id="basket"></ol>
 </body>
+<input type="text" id="newshi">
 </html>
